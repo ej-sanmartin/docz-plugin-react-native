@@ -1,0 +1,1 @@
+import{createPlugin}from"docz-core";const reactNative=()=>createPlugin({setConfig:e=>Object.assign({},e,{native:!0}),modifyBundlerConfig:e=>(e.resolve.alias=Object.assign({},e.resolve.alias||{},{"react-native$":"react-native-web"}),e)});export{reactNative};

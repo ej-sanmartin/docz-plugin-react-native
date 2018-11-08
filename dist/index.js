@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var doczCore=require("docz-core");const reactNative=()=>doczCore.createPlugin({setConfig:e=>Object.assign({},e,{native:!0}),modifyBundlerConfig:e=>(e.resolve.alias=Object.assign({},e.resolve.alias||{},{"react-native$":"react-native-web"}),e)});exports.reactNative=reactNative;
